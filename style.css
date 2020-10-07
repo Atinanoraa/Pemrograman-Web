@@ -1,0 +1,363 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.myNavbar{
+    background: rgb(61, 61, 61);
+}
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4{
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+.jumbotron .container{
+    padding: 10px 40px;
+}
+
+/* Info Panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+.info-panel img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.info-panel p{
+    font-size: 14px;
+    color: #727272;
+    margin-top: -5px;
+    font-weight: 200;
+}
+.info-panel .row .col-lg{
+    position: relative;
+    text-align: left;
+}
+
+/* Section Peraturan */
+.syarat h1{
+    font-family: Amaranth;
+    color: red;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+.syarat .aturan p{
+    font-family: Inter;
+    text-align: center;
+    font-size: 32px;
+    color:black;
+    padding-bottom: 100px;
+}
+    
+/* Akhir Section Peraturan */
+
+/* Utility */
+.tombol{
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* DESTOP */
+@media (min-width: 992px) { 
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .nav-link.active::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+    }
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+}
+/* Menu */
+.menu{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+.menu .pilihan img{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+}
+.menu .pilihan h1{
+    margin-top: 10px;
+}
+.pilihan{
+    font-family: Viga;
+    border: 1px solid black;
+    margin: 10px;
+    text-align: center;
+}
+.menu .pilihan a{
+    border: 1px solid blue;
+    padding: 10px;
+    color: white;
+    background: blue;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Chat */
+.contact {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+	width: 500px;
+	margin: auto;
+}
+.chat {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background: #f1f0e8;
+}
+.chat-header {
+	display: flex;
+	cursor: pointer;
+}
+.profile {
+	width: 100%;
+	background: #036055;
+	display: flex;
+	align-items: center;
+	height: 65px;
+	padding: 0px 10px;
+	position: relative;
+}
+.profile .pp {
+	width: 50px;
+	display: inline-block;
+	border-radius: 50%;
+    margin-left: 35px;
+    padding: 20px 0;
+}
+.profile .arrow {
+	display: inline-block;
+	width: 30px;
+	position: absolute;
+	top: 19px;
+	cursor: pointer;
+}
+.profile h2 {
+	display: inline-block;
+	line-height: 60px;
+    vertical-align: bottom;
+    margin-left: 10px;
+	color: #fff;
+	font-size: 20px;
+}
+.profile span {
+	color: #ccc;
+	position: absolute;
+	top: 42px;
+	left: 110px;
+	font-size: 14px;
+}
+.right .icon {
+	display: inline-block;
+	width: 25px;
+	margin-left: 10px;
+}
+.profile .left {
+	flex: 1;
+}
+
+.chat-box {
+	background: url("img/bg.jpeg");
+	background-attachment: fixed;
+	padding-left: 20px;
+	overflow-y: scroll;
+	flex: 1;
+}
+.chat-r {
+	display: flex;
+}
+.chat-r .sp {
+	flex: 1;
+}
+.chat-box .mess {
+	max-width: 300px;
+	background: #F7FCF6;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px 0px;
+	cursor: pointer;
+}
+.chat-box .mess p {
+	word-break: break-all;
+	font-size: 18px;
+}
+.chat-box .mess-r {
+    background: #E2FFC7;
+}
+.chat-box .check {
+	float: right;
+}
+.chat-box .check img {
+	width: 20px;
+}
+.chat-box .check span {
+	color: #888;
+	font-size: 12px;
+	font-weight: 700px;
+}
+.chat-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 60px;
+	position: relative;
+	cursor: pointer;
+}
+.chat-footer textarea {
+	display: block;
+	flex: 1;
+	width: 100%;
+	height: 50px;
+	border-radius: 60px;
+	margin: 5px;
+	padding: 5px;
+	outline: none;
+	font-size: 19px;
+	padding-left: 55px;
+	padding-right: 90px;
+	border: 2px solid #ccc;
+	color: #555;
+	resize: none;
+}
+.chat-footer ::placeholder{
+    padding-top: 12px;
+}
+.chat-footer .mic {
+	display: block;
+	width: 55px;
+	height: 55px;
+	margin-right: 20px;
+}
+
+.chat-footer .emo{
+	display: block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 15px;
+	top: 20px;
+}
+.chat-footer .icons {
+	position: absolute;
+	right: 100px;
+	top: 18px;
+}
+.chat-footer .icons img{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+.contact::-webkit-scrollbar {
+	width: 5px;
+}
+.contact::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+.contact::-webkit-scrollbar-thumb {
+	background: #aaa;
+}
+.contact::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    margin: 20px;
+    background: rgb(61, 61, 61);
+    height: 70px;
+}
+.footer p{
+    padding-top: 25px;
+    font-weight: bold;
+    color: white;
+}
+.footer em{
+    font-weight: bold;
+    color: violet;
+}
+.footer a{
+    font-weight: bold;
+    color: violet;
+}
